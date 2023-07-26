@@ -20,13 +20,17 @@
         <!-- Font Awesome  -->
         <script src="https://kit.fontawesome.com/e970068739.js" crossorigin="anonymous"></script>
 
+        <!-- Add the following line to include Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
         <!-- tailwind custom color  -->
         <script>
         tailwind.config = {
             theme: {
                 extend: {
                 colors: {
-                    'gradient-start': '#FF8938',
+                    'gradient-start': '#121212',
+                    'gradient-end': '#12121200',
                    'bg-fruit-primary': '#F85559',
                  }
               }
@@ -39,10 +43,11 @@
                 font-family: 'Lato', sans-serif;
             }
         </style>
+
   </head>
   <body class="font-lato">
       <header class="container mx-auto">
-          <nav>
+          <nav class="">
             <div class="navbar mt-5 bg-[#F85559] rounded-[600px]">
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu text-white menu-horizontal px-1">
@@ -57,7 +62,7 @@
                         <img class="w-10 h-10" src="images/logo.png" alt="">
                          <a class="btn btn-ghost normal-case text-white text-2xl lg:text-4xl ">Fruit Burst</a>
                      </div>
-                    <input type="text" placeholder="Search here" class="input input-bordered rounded-[50px] hidden md:w-24 lg:w-60"/>             
+                    <input type="text" placeholder="Search here" class="input input-bordered rounded-[50px] hidden sm:hidden lg:flex md:w-24 lg:w-60"/>             
                 </div>
 
                 <div class="flex">
@@ -75,14 +80,71 @@
                       </ul>
                     </div>
                 </div>
-            </div>
+              </div>
          </nav>
-         
-
       </header>
 
       <main class="container mx-auto">
-         <section class="my-20">
+
+          <!-- banner section  -->
+          <div class="carousel w-full mt-10 rounded-xl">
+            
+          <div id="slide1" class="carousel-item relative w-full bg-gradient-to-r from-[#121212] to-[#12121200]">
+            <img class="w-full bg-img"  src="images/banner1.png" />
+            <div class="absolute transform text-center -translate-y-1/2 text-white ml-64  top-40 space-y-5">          
+                 <h1 class="text-5xl  items-center font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                   <p>We supply highly quality organic products</p>
+                  <button><a class="btn bg-[#F85559] text-white border-none">Shop All</a></button>                                     
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2  left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a> 
+              <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div> 
+
+          <div id="slide2" class="carousel-item relative w-full">
+            <img class="w-full bg-img bg-gradient-to-r from-[#121212] to-[#12121200] shadow-xl"  src="images/banner2.png" />
+            <div class="absolute transform text-center -translate-y-1/2 text-white ml-64  top-40 space-y-5">          
+                 <h1 class="text-5xl  items-center font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                   <p>We supply highly quality organic products</p>
+                  <button><a class="btn bg-[#F85559] text-white border-none">Shop All</a></button>                                     
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2  left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a> 
+              <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div> 
+
+
+          <div id="slide3" class="carousel-item relative w-full bg-gradient-to-r from-[#121212] to-[#12121200] shadow-xl">
+            <img class="w-full bg-img "  src="images/banner3.png" />
+            <div class="absolute transform text-center -translate-y-1/2 text-white ml-64  top-40 space-y-5">          
+                 <h1 class="text-5xl  items-center font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                   <p>We supply highly quality organic products</p>
+                  <button><a class="btn bg-[#F85559] text-white border-none">Shop All</a></button>                                     
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2  left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a> 
+              <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div> 
+
+          <div id="slide4" class="carousel-item relative w-full bg-gradient-to-r from-[#121212] to-[#12121200] shadow-xl">
+            <img class="w-full bg-img "  src="images/banner4.png" />
+            <div class="absolute transform text-center -translate-y-1/2 text-white ml-64  top-40 space-y-5">          
+                 <h1 class="text-5xl  items-center font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                   <p>We supply highly quality organic products</p>
+                  <button><a class="btn bg-[#F85559] text-white border-none">Shop All</a></button>                                     
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2  left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a> 
+              <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+            </div>
+          </div> 
+          </div>
+          
+          <!-- deal of the day section  -->
+         <section class="my-20 ">
               <div class="flex flex-col lg:flex-row justify-between items-center">
                  <div class="ml-1">
                     <h3 class="text-5xl mb-5 font-semibold">Deal of the day</h3>
@@ -174,7 +236,7 @@
 
                  <!--  review-card-3 -->
                  <div class="card bg-[#FFF] p-9 border border-gray-300">
-                    <figure><img class="w-[130px] h-[130px]" src="images/fruit8.png" alt="fruits" /></figure>
+                    <d><img class="w-[130px] h-[130px]" src="images/fruit8.png" alt="fruits" /></d>
                     <div class="card-body items-center -mt-2">
                         <p class="text-xl">12.90$-18.85$ </p> 
                         <hr class="text-[#121212] w-40">
@@ -228,7 +290,32 @@
                <a class="btn bg-[#F85559] text-white">Shop All</a>
             </div>
          </section>
-      </main>
+         
+
+         <!-- Meet the team section  -->
+         <main class="my-20">
+             <section id="slide1" class="carousel-item relative w-full bg-gradient-to-r from-[#121212] to-[#12121200]">
+                <img class="w-full bg-img"  src="images/banner1.png" />
+                <div class="absolute transform text-center -translate-y-1/2 text-white ml-64  top-40 space-y-5">          
+                  <h1 class="text-5xl  items-center font-extrabold">Meet the team section</h1>
+                   <div>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p> 
+                     <div>
+                   
+                </div>                                   
+                </p>
+
+              
+                      <!-- <div class="absolute flex justify-between transform -translate-y-1/2  left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a> 
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                      </div> -->
+                  </div> 
+              </div> 
+             </section>
+         </main>
+            
+        
+  
 
      <footer class="footer footer-center h-[426px] p-10 bg-[#121212] text-white rounded-lg mt-20">
         <div class="flex gap-0">
