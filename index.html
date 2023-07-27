@@ -87,7 +87,7 @@
       <main class="container mx-auto">
 
          <!-- banner section  -->
-         <div class="carousel ml-4 w-[380px] lg:w-full mt-10 rounded-xl">
+         <div class="carousel ml-4 w-[380px] lg:w-full mt-10 rounded-xl hidden">
             
           <!-- slide-1   -->
           <div id="slide1" class="carousel-item bg-opacity-75 relative w-full h-[220px] md:h[450px] lg:h-[500px] bgopacity-50 ">
@@ -158,7 +158,7 @@
          </div>
           
          <!-- deal of the day section  -->
-         <section class="my-5 lg:my-20">
+         <section class="my-5 lg:my-20 hidden">
               <div class="flex flex-col lg:flex-row justify-between items-center">
                  <div class="lg:ml-1">
                     <h3 class="text-2xl md:text-xl lg:text-5xl mb-2 ml-8 md:ml-0 lg:ml-0 lg:mb-5 font-extrabold lg:font-semibold">Deal of the day</h3>
@@ -435,14 +435,14 @@
          </section>
           
          <!-- Only Button  -->
-         <section class="my-16 mb-4 lg:my-10">
+         <section class="my-16 mb-4 lg:my-10 hidden">
             <div class="items-center text-center -mt-10">
                <a class="btn bg-[#F85559] text-white">Shop All</a>
             </div>
          </section>
         
          <!-- Meet the team section  -->
-         <section class="mt-6 lg:mt-10">
+         <section class="mt-6 lg:mt-10 hidden">
           <div class="hero ml-4 w-[380px] lg:w-auto lg:h-[690px] rounded-xl" style="background-image: url('images/team.png');">
               <div class="hero-overlay bg-opacity-75 "></div>
                  <div class="hero-content text-center text-neutral-content">
@@ -519,79 +519,80 @@
         
 
          <!-- Why choose us section  -->
-         <section class="my-10 lg:my-28 hidden">
+         <section class="my-10 lg:my-28 ">
              <div class="bg-[#FFF]">
                    
                    <div class="text-center">
-                      <h1 class="text-xl lg:text-5xl font-extrabold">Who Choose Us</h1>
+                      <h1 class="text-xl lg:text-5xl font-extrabold">Why Choose Us</h1>
                       <p class="text-sm  mt-4 text-[8] font-normal w-auto lg:w-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
                    </div>
 
                   <!-- 3part main div -->
-                  <div class="grid grid-cols-1 lg:grid-cols-3 mt-8 gap-2 p-2 "> 
+                  <div class="grid grid-cols-1 lg:grid-cols-3 mt-0 lg:mt-8 gap-2 p-2 "> 
 
+              
                          <!-- part-1  -->
                          <div class="">
-                            <div class="flex gap-2">
-                                  <div>
+                            <div class="flex flex-col lg:flex-row gap-2  ml-6 w-[340px] lg:w-auto">
+                                  <div class="m-auto lg:m-0">
                                       <img class="bg-[#12121226] mt-4 p-2 rounded-full" src="images/icon1.png" alt="">
                                   </div>
 
-                                  <div>
+                                  <div class="m-auto lg:m-0 text-center lg:text-start">
                                       <h2 class="text-2xl font-bold">Dadicated Team</h2>
-                                      <hr class="w-20 mt-1 border border-black">
+                                      <hr class="w-24 ml-20 lg:ml-0 mt-1 border border-black ">
                                       <p class="mt-1 w-64 text-base font-normal">Expert staff ensuring the freshest most amazing fruits</p>
                                   </div>
                               </div>
+     
+                                <div class="flex flex-col lg:flex-row gap-2  ml-6 w-[340px] lg:w-auto">
+                                      <div class="m-auto lg:m-0">
+                                          <img class="bg-[#12121226] mt-4 p-2 rounded-full" src="images/icon2.png" alt="">
+                                      </div>
 
-                              <div class="flex gap-2 mt-2">
-                                  <div>
-                                      <img class="bg-[#12121226] mt-4 p-2 rounded-full" src="images/icon2.png" alt="">
+                                      <div class="m-auto lg:m-0 text-center lg:text-start">
+                                          <h2 class="text-2xl font-bold">Fresh is Best</h2>
+                                          <hr class="w-24 ml-20 lg:ml-0 mt-1 border border-black ">
+                                          <p class="mt-1 w-64 text-base font-normal">Expert staff ensuring the freshest most amazing fruits</p>
+                                      </div>
                                   </div>
 
-                                  <div>
-                                      <h2 class="text-2xl font-bold">Fresh is Best</h2>
-                                       <hr class="w-20 mt-1 border border-[#121212CC]">
-                                      <p class="mt-1 w-64 text-base  font-normal">Expert staff ensuring the freshest most amazing fruits</p>
+
+                                   <div class="flex flex-col lg:flex-row gap-2  ml-6 w-[340px] lg:w-auto">
+                                      <div class="m-auto lg:m-0">
+                                          <img class="bg-[#12121226] mt-4 p-2 rounded-full" src="images/icon3.png" alt="">
+                                      </div>
+
+                                      <div class="m-auto lg:m-0 text-center lg:text-start">
+                                          <h2 class="text-2xl font-bold">Gift Certificates</h2>
+                                          <hr class="w-24 ml-20 lg:ml-0 mt-1 border border-black ">
+                                          <p class="mt-1 w-64 text-base font-normal">Expert staff ensuring the freshest most amazing fruits</p>
+                                      </div>
+                                    </div>
                                   </div>
-                              </div>
 
-                              <div class="flex gap-2 mt-2">
-                                  <div>
-                                      <img class="bg-[#12121226] mt-4 p-2 rounded-full" src="images/icon3.png" alt="">
-                                  </div>
-
-                                  <div>
-                                      <h2 class="text-2xl font-bold">Gift Certificates</h2>
-                                      <hr class="w-20 mt-1 border border-black">
-                                      <p class="mt-1 w-64 text-base  font-normal">Expert staff ensuring the freshest most amazing fruits</p>
-                                  </div>
-                            </div>
-                         </div>
-
-
-
-                        <!-- part-2  -->
-                        <div>
-                           <img src="images/whychoose1.png" alt="" class="px-2">
-                        </div>
+                       
+                                    <!-- part-2  -->
+                                    <div class=" mt-5 lg:mt-0">
+                                      <img src="images/whychoose1.png" alt="" class="px-2">
+                                    </div>
 
 
                         <!-- part-3  -->
-                         <div class="">
-                            <div class="flex gap-2 flex-row-reverse text-right">
-                                  <div class="">
+                         <div class="hidden sm:block my-button ">
+                               <div class="flex gap-2 mt-2 flex-row-reverse text-right">
+                                   <div class="">
                                       <img class="bg-[#12121226]  mt-4 p-2 rounded-full" src="images/icon4.png" alt="">
-                                  </div>
+                                   </div>
 
-                                  <div class="">
+                                   <div class="">
                                       <h2 class="text-2xl font-bold">Integrated Supplier</h2>
                                       <hr class="w-20 mt-1 ml-auto  border  border-black">
-                                      <p class="mt-1 w-64 text-base  font-normal">Expert staff ensuring the freshest most amazing fruits</p>
-                                  </div>
-                              </div>
+                                      <p class="mt-1 w-64 text-base font-normal">Expert staff ensuring the freshest most amazing fruits</p>
+                                   </div>
+                               </div>
 
-                              <div class="flex gap-2 mt-2 flex-row-reverse text-right">
+                               <div class="flex gap-2 mt-2 flex-row-reverse text-right">
                                   <div class="">
                                       <img class="bg-[#12121226]  mt-4 p-2 rounded-full" src="images/icon5.png" alt="">
                                   </div>
